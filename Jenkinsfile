@@ -6,5 +6,10 @@ pipeline {
                 echo "Current branch: ${env.BRANCH_NAME}"
             }
         }
+         stage('Build Dev') {
+            steps {
+                echo "Deplyment in Dev..."
+            }
+        }
     }
 }
